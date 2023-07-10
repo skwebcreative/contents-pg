@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body{
+  min-width:960px;
+  background:#f3f3f3;
+  font-size:15px;
+  font-family:sans-serif;
+}
+html{
+  font-size:100%;/*ユーザー設定の文字サイズを正しく反映*/
+}
+*{
+  box-sizing:border-box;
+}
+img{
+  max-width:100%;/*画像が親要素からはみ出すのを防ぐ*/
+  height:auto;
+}
+body{
+  background-color:#fff;
+  margin:0;
+  padding:0;
+}
+
+header{
+  width:100%;
+  background-color:#d3d3d3;
+  display:flex;
+  justify-content:space-between; /*メニューを右端に置く方法その１*/
+  padding:0 2%;
+  align-items:center;
+  position:fixed;  /*ヘッダーの位置を固定*/
+  top:0;  /*ヘッダーの位置を固定（上0）*/
+  left:0; /*ヘッダーの位置を左固定（左０）*/
+}
+ul{
+  display:flex;
+  list-style:none;
+}
+li{
+  margin-left:40px;
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+nav{
+  margin-left:auto; /*メニューを右端に置く方法その２*/
+}
+a:hover{
+  opacity: 0.5;
+}
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* width: 60%; */
+  margin: 30px 10px;
+  padding-top: 30px;
+  background-color:#d3d3d3;
+}
+.item {
+  width: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
+  padding: 50px 10px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: antiquewhite;
+}
+.item .image{
+  display: block;
+  width: 100%;
+}
+/* .contents.item:not(:first-child){
+  margin-left: 10px;
+} */
